@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+ 
+  <link rel="stylesheet” href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <i class="fa fa-instagram" aria-hidden="true">fa fa-instagram</i>
+    <title>충북대학교 멋쟁이사자처럼 X Instagram<</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <nav>
+          <h1 id="title">충북대학교 멋쟁이사자처럼 X Instagram</h1>
+        <ul class="nav navbar-nav navbar-right">
+         <li id="he"><%= link_to '멤버 인스타그램 보러가기', '#' %></li>
+       </ul>
+      </nav>
+    </div>
+  </header>
+  
+<div class="container">
+  <%= yield %>
+</div>
+
 
 </body>
 </html>
